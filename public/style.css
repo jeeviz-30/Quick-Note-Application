@@ -6,11 +6,17 @@
 }
 
 body {
-    background-color: #f4f7f6;
+    /* Direct notepad background image from Pexels */
+    background-image: url('https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: #333;
     display: flex;
     justify-content: center;
     padding: 20px;
+    min-height: 100vh;
 }
 
 .container {
@@ -131,4 +137,8 @@ header h1 {
 .empty-msg {
     color: #777;
     font-style: italic;
+}
+.note-form-container, .note-card {
+    background: rgba(255, 255, 255, 0.92); /* White with slight transparency */
+    backdrop-filter: blur(5px);            /* Subtle blur effect */
 }
